@@ -1,0 +1,27 @@
+# Installed with --no-deps (see Dockerfile): anything that depends on torch can
+# silently swap ROCm torch for a CUDA build. pymupdf is a self-contained wheel;
+# everything else here is transformers + its missing-from-base dependencies.
+transformers>=4.57
+tokenizers
+safetensors
+regex
+requests
+huggingface-hub
+filelock
+tqdm
+pyyaml
+packaging
+typing-extensions
+numpy
+pymupdf
+httpx2>=2,<3
+httpcore2==2.0.0
+anyio
+certifi
+idna
+h11
+truststore
+hf-xet
+fsspec
+click>=8.4.2,<9
+tomli
